@@ -1,10 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-    <title>Furkan'ın Blogu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furkan'ın Dünyası</title>
+    <style>
+        /* --- TASARIM BURADA BAŞLIYOR (CSS) --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9; /* Arka plan rengi */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Üst Kısım (Header) */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Mor-Mavi geçişli renk */
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 { margin: 0; font-size: 3rem; letter-spacing: 2px; }
+        header p { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
+
+        /* Ana İçerik Kutusu */
+        .container {
+            max-width: 800px; /* Sitenin genişliği */
+            margin: -40px auto 0; /* Kutuyu yukarı doğru itip header'ın içine sokar */
+            padding: 20px;
+        }
+
+        /* Blog Kartları */
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* Gölge efekti */
+            transition: transform 0.3s ease; /* Hareket efekti */
+        }
+        
+        /* Kartın üzerine gelince hafif zıplasın */
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .blog-title { color: #2c3e50; font-size: 1.8rem; margin-top: 0; }
+        .blog-date { color: #888; font-size: 0.85rem; display: block; margin-bottom: 15px; }
+        .blog-tag { 
+            background-color: #e0f7fa; 
+            color: #006064; 
+            padding: 5px 10px; 
+            border-radius: 20px; 
+            font-size: 0.8rem; 
+            font-weight: bold;
+        }
+
+        footer { text-align: center; padding: 40px; color: #888; font-size: 0.9rem; }
+        
+        /* Linklerin rengi */
+        a { color: #764ba2; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; }
+    </style>
 </head>
-<body style="text-align: center; padding: 50px; font-family: sans-serif;">
-    <h1>Merhaba, Ben Furkan!</h1>
-    <p>Sitem şu an yayında.</p>
+<body>
+
+    <header>
+        <h1>Furkan Yıldızbaş</h1> <p>🚀 Kodluyor, Geziyor, Paylaşıyor.</p> </header>
+
+    <div class="container">
+        
+        <article class="blog-card">
+            <span class="blog-tag">🎉 Başlangıç</span>
+            <h2 class="blog-title">Yeni Başlayanlar İçin: Neden Blog Açtım?</h2>
+            <span class="blog-date">📅 10 Aralık 2025</span>
+            <p>
+                Bugün dijital dünyadaki ilk evimi inşa ettim. GitHub Pages kullanarak hiçbir ücret ödemeden bu siteyi kurdum.
+                Burada öğrendiğim yazılım dillerini, karşılaştığım hataları ve çözümleri paylaşacağım.
+            </p>
+            <p>
+                Belki biraz da günlük hayatımdan, izlediğim filmlerden bahsederim. Takipte kalın!
+            </p>
+        </article>
+
+        <article class="blog-card">
+            <span class="blog-tag">💻 Teknoloji</span>
+            <h2 class="blog-title">Yazılıma Nereden Başlamalı?</h2>
+            <span class="blog-date">📅 8 Aralık 2025</span>
+            <p>
+                Herkesin aklında aynı soru: Python mı, JavaScript mi? Bence en önemlisi "başlamak". 
+                Hangi dille başladığının bir önemi yok, mantığı kavramak önemli. Ben şu an Web teknolojilerine odaklandım.
+            </p>
+        </article>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Furkan Yıldızbaş - İstanbul'dan Sevgilerle.</p>
+        <p>
+            <a href="https://twitter.com">Twitter</a> • 
+            <a href="https://instagram.com">Instagram</a> • 
+            <a href="https://github.com">GitHub</a>
+        </p>
+    </footer>
+
 </body>
 </html>
