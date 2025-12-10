@@ -3,44 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furkan'ın Blogu</title>
+    <title>Furkan Mustafa Yıldızbaş | Kişisel Blog & Portfolyo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f4f9; color: #333; }
-        header { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 60px 20px; text-align: center; }
-        header h1 { margin: 0; font-size: 3rem; }
-        .container { max-width: 800px; margin: -30px auto 0; padding: 20px; }
-        .card { background: white; padding: 30px; margin-bottom: 20px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .card:hover { transform: translateY(-5px); transition: 0.3s; }
-        h2 { color: #2c3e50; margin-top: 0; }
-        .date { color: #888; font-size: 0.8rem; display: block; margin-bottom: 10px; }
-        a { color: #764ba2; text-decoration: none; font-weight: bold; }
-        footer { text-align: center; padding: 30px; color: #aaa; font-size: 0.9rem; }
+        /* --- GENEL AYARLAR --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- HEADER (ÜST KISIM) --- */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Mühendis mavisi tonları */
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
+        header p { font-size: 1.2rem; opacity: 0.9; margin-top: 10px; font-weight: 300; }
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .social-icons a:hover { color: #ffcc00; transform: scale(1.2); }
+
+        /* --- İÇERİK KUTUSU --- */
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px; /* Header'ın içine girsin */
+            padding: 0 20px;
+        }
+
+        /* --- KART TASARIMI --- */
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }
+
+        /* --- BAŞLIKLAR VE ETİKETLER --- */
+        h2 { color: #1e3c72; border-bottom: 2px solid #f0f2f5; padding-bottom: 10px; margin-top: 0; }
+        h3 { color: #333; margin-bottom: 5px; }
+        
+        .tag {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1565c0;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        
+        .date { color: #777; font-size: 0.9rem; font-style: italic; }
+        .company { font-weight: bold; color: #555; }
+
+        /* --- FOOTER --- */
+        footer { text-align: center; padding: 40px; color: #777; font-size: 0.9rem; border-top: 1px solid #ddd; }
+        footer a { color: #1e3c72; text-decoration: none; font-weight: bold; }
+
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Furkan Yıldızbaş</h1>
-        <p>🚀 Kodluyor, Geziyor, Paylaşıyor.</p>
+        <h1>Furkan Mustafa Yıldızbaş</h1>
+        <p>⚡ Elektrik-Elektronik Mühendisi | 🤖 Gömülü Yazılım & Yapay Zeka</p>
+        
+        <div class="social-icons" style="margin-top: 20px;">
+            <a href="https://linkedin.com/in/furkan-mustafa-yildizbas/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:furkanyildizbas1@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/furkanybs1" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
     </header>
 
     <div class="container">
+
         <article class="card">
-            <h2>🎉 Blogum Yayında!</h2>
-            <span class="date">10 Aralık 2025</span>
-            <p>Sonunda kendi sitemi kurdum. GitHub Pages sayesinde hiçbir ücret ödemeden yayınladım.</p>
-            <p>Tasarımı tek bir dosya ile hallettik. Çok sade ve hızlı çalışıyor.</p>
+            <h2>👋 Hakkımda</h2>
+            <p>
+                Merhaba! Ben Furkan. <strong>İstanbul Üniversitesi Elektrik-Elektronik Mühendisliği</strong> mezunuyum. 
+                Özellikle <strong>Gömülü Sistemler (Embedded)</strong>, <strong>Görüntü İşleme</strong> ve <strong>Yapay Zeka (AI)</strong> alanlarına tutkuluyum.
+                TÜBİTAK ve Teknofest projelerinde aktif görev aldım, otonom araçlar üzerine çalıştım.
+            </p>
         </article>
 
         <article class="card">
-            <h2>💻 Neler Yapacağım?</h2>
-            <span class="date">9 Aralık 2025</span>
-            <p>Burada yazılım maceralarımı ve projelerimi paylaşacağım. Takipte kalın!</p>
+            <h2>💼 Deneyimler</h2>
+            
+            <div style="margin-bottom: 20px;">
+                <h3>Stajyer Mühendis - ARGE</h3>
+                <span class="company">Anadolu Isuzu Otomotiv</span> <span class="date">| Ağustos 2021 - Ekim 2021</span>
+                <p>
+                    Otobüs geliştirme süreçlerinde yer aldım. CAN, RS-232, I2C gibi haberleşme protokolleri üzerine çalıştım.
+                    Teknik dokümantasyon ve ürün patent süreçlerine destek verdim.
+                </p>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
+            <div>
+                <h3>Elektrik Takım Lideri</h3>
+                <span class="company">OTOBİL - Elektrikli Otonom Araç Takımı</span> <span class="date">| Eylül 2019 - Temmuz 2021</span>
+                <p>
+                    TÜBİTAK Efficiency Challenge ve Teknofest Robotaksi yarışmalarında derece kazanan takımın liderliğini yaptım.
+                    STM32, Altium Designer ve Görüntü İşleme (YoloV5) teknolojilerini kullanarak otonom sürüş algoritmaları geliştirdik.
+                </p>
+            </div>
         </article>
+
+        <article class="card">
+            <h2>🛠️ Teknik Yetenekler</h2>
+            <p>CV'mde yer alan ve aktif kullandığım teknolojiler:</p>
+            
+            <span class="tag">C / C++</span>
+            <span class="tag">Python</span>
+            <span class="tag">Gömülü Yazılım (Embedded)</span>
+            <span class="tag">Görüntü İşleme</span>
+            <span class="tag">TensorFlow & Keras</span>
+            <span class="tag">STM32 & Arduino</span>
+            <span class="tag">Altium Designer (PCB)</span>
+            <span class="tag">ROS</span>
+            <span class="tag">MATLAB / Simulink</span>
+        </article>
+
+        <article class="card">
+            <h2>🚀 Öne Çıkan Proje</h2>
+            <h3>Robotik Görü ile Hasat Zamanı Belirleme</h3>
+            <span class="date">TÜBİTAK 2209-A Projesi</span>
+            <p>
+                Tarım alanlarında hasat zamanının otomatik tespiti için geliştirdiğim proje. 
+                <strong>Raspberry Pi</strong> üzerinde gerçek zamanlı görüntü işleme yaparak, Python ve Derin Öğrenme (CNN) tekniklerini kullandım.
+            </p>
+        </article>
+
     </div>
 
     <footer>
-        <p>&copy; 2025 Tüm Hakları Saklıdır.</p>
+        <p>&copy; 2025 Furkan Mustafa Yıldızbaş</p>
+        <p>
+            <a href="mailto:furkanyildizbas1@gmail.com">Bana Ulaşın</a>
+        </p>
     </footer>
 
 </body>
